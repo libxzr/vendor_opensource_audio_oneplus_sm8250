@@ -1848,7 +1848,6 @@ handle_irq:
 					continue;
 				if (swr_dev->slave_irq) {
 					do {
-						swr_dev->slave_irq_pending = 0;
 						handle_nested_irq(
 							irq_find_mapping(
 							swr_dev->slave_irq, 0));
